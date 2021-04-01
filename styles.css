@@ -1,0 +1,147 @@
+body {
+  background: url("assests/tile.jpg");
+  font-family: "Pacifico", cursive;
+}
+#title {
+  display: flex;
+  margin: auto;
+}
+#date {
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 50%;
+  height: 50%;
+  margin: 5px;
+}
+#time {
+  font-size: 15px;
+  width: 30%;
+  height: 50%;
+  margin: 5px;
+}
+button {
+  margin: 5px;
+  display: flex;
+  width: 45%;
+}
+div.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 3% 0 3% 0;
+  height: 30%;
+  font-size: 20px;
+}
+div.form-paper {
+  background: url("assests/formbg.jpg");
+  width: 45%;
+  height: 50%;
+}
+div.form-paper #textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 1.5em 0;
+  width: 80%;
+  height: 50%;
+  margin-top: 4%;
+  margin-left: 15%;
+  font-size: 20px;
+  resize: none;
+  overflow-y: auto;
+  height: 40%;
+}
+.notebg {
+  background: url("assests/notebg.png") no-repeat;
+  height: 300px;
+  width: 200px;
+  margin: 15px;
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-out {
+  animation: fadeAway 1s linear;
+}
+
+@keyframes fadeAway {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+span.glyphicon-remove-circle {
+  display: none;
+  font-size: 35px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 12px 0px black, inset 1px 2px 0px 0px black;
+}
+#noteDetails:hover .glyphicon-remove-circle {
+  display: inline;
+}
+.glyphicon-remove-circle:hover {
+  cursor: pointer;
+}
+.glyphicon-remove-circle:active {
+  top: 3%;
+  box-shadow: 0px 0px 12px 0px black, inset 1px 2px 0px 0px black;
+}
+
+#textareaTask {
+  font-family: "Tangerine", serif;
+  font-weight: bold;
+  font-size: 25px;
+  width: 70%;
+  height: 40%;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
+  height: 40%;
+}
+#pDate {
+  font-family: "Tangerine", serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: -10px;
+  margin-left: 20px;
+}
+#pTime {
+  font-family: "Tangerine", serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+}
+#newTasks {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+@media screen and (max-width: 912px) {
+  button,
+  #date,
+  #time {
+    width: 90%;
+  }
+}
