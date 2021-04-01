@@ -36,6 +36,7 @@ function saveTask() {
     const note = { "textarea": textarea, "date": date, "time": time };
     localStorage.setItem(key, JSON.stringify(note));
     printNote(note, key);
+    clearInputs();
 }
 
 function printNote(note, key = 0) {
